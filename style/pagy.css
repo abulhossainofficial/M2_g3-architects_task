@@ -22,7 +22,6 @@
 }
 
 header {
-  max-width: 1920px;
   background: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
 }
@@ -117,6 +116,80 @@ main {
   font-weight: 700;
 }
 
+.teams-descr {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.facts-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.facts-par {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 1rem;
+  margin-right: 50rem;
+  margin-top: 0;
+}
+
+.facts-cart-container {
+  display: flex;
+  justify-content: space-around;
+}
+.facts-cart-container .card {
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  text-align: center;
+  padding: 2.8rem;
+}
+
+.facts-cart-container .card-stats {
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.facts-cart-container .card-title {
+  color: #727272;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+#Sponspors {
+  text-align: center;
+}
+.Sponspors-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.Sponspors-pra {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.sponspors-img-container {
+  margin-top: 3.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 4rem;
+}
+
+.sponspors-img-container img {
+  width: 166.757px;
+  height: 50px;
+}
 /* resposiv media queries  */
 
 @media screen and (max-width: 576px) {
@@ -129,8 +202,30 @@ main {
   .banner-drs {
     margin: auto;
   }
-  nav {
+  nav,
+  .facts-cart-container,
+  .sponspors-img-container {
     flex-direction: column;
+  }
+  #teams-conatner {
+    flex-direction: column;
+  }
+  .teams-images-container {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .teams-content,
+  .facts-cart-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .facts-cart-container,
+  .sponspors-img-container {
+    gap: 1rem;
+  }
+  .facts-par,
+  .facts-title {
+    margin: 2rem;
   }
 }
 
@@ -144,7 +239,27 @@ main {
   .banner-drs {
     margin: auto;
   }
-  nav {
+  nav,
+  .facts-cart-container,
+  .sponspors-img-container {
     flex-direction: column;
+  }
+  #teams-conatner {
+    flex-direction: column;
+  }
+  .teams-images-container {
+    padding: 0;
+  }
+  .teams-content {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .facts-cart-container,
+  .sponspors-img-container {
+    gap: 2rem;
+  }
+  .facts-par,
+  .facts-title {
+    margin: 2rem;
   }
 }
